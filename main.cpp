@@ -6,6 +6,8 @@ using namespace std;
 
 
 int main() {
+ 
+
     ifstream f("sample.txt");
 
     if (!f.is_open()) {
@@ -17,7 +19,6 @@ int main() {
     while (getline(f, s))
         cout << s << endl;
 
-    f.close();
 
 
     return 0;
