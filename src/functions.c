@@ -1,6 +1,8 @@
 // Defines the functions
+#include <string.h>
 #include <stdio.h>
 #include "functions.h"
+
 
 void openFile() {
     char buffer[256]; // Buffer to store lines from the file.
@@ -8,7 +10,7 @@ void openFile() {
         FILE *f = fopen("sample.txt", "r"); // Open the file in read mode.
     if (f == NULL) {
         fprintf(stderr, "Error opening the file!\n");
-        return 1;
+        return;
     }
 
     // Read and print each line from the file.

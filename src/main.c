@@ -5,7 +5,7 @@
 
 int main() {
     char choice;
-    printf("(1) New (2) Open (3) Exit \n");
+    printf("(2) New (2) Open (3) Exit \n");
     scanf(" %c", &choice);
 
     switch (choice)
@@ -16,11 +16,10 @@ int main() {
     
     case '2': // Open
         printf("Case 2 is matched.");
+        openFile();
         break;
     
     case '3': // Exit
-        printf("Case 3 is matched.");
-        void exit(int status);
         break;
     
     default:
